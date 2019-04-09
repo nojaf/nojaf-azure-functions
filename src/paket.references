@@ -1,0 +1,7 @@
+FSharp.Compiler.Service
+Microsoft.NET.Sdk.Functions
+Newtonsoft.Json
+Thoth.Json.Net
+FSharp.Core
+FSharp.Data
+File:JsonInference.fs
