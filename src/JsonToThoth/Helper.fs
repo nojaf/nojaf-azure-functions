@@ -11,6 +11,8 @@ module Helper =
 
   let toThothDecoder primitiveType =
     match primitiveType with
+    | t when (t = typedefof<FSharp.Data.Runtime.StructuralTypes.Bit0>) -> "int"
+    | t when (t = typedefof<FSharp.Data.Runtime.StructuralTypes.Bit1>) -> "int"
     | t when (t = typedefof<int>) -> "int"
     | t when (t = typedefof<string>) -> "string"
     | t when (t = typedefof<Guid>) -> "guid"
@@ -22,7 +24,7 @@ module Helper =
     | t when (t = typedefof<decimal>) -> "decimal"
     | t when (t = typedefof<DateTime>) -> "datetime"
     | t when (t = typedefof<DateTimeOffset>) -> "datetimeOffset"
-    | _ -> failwith "Not a known Thoth primitive"
+    | _ -> failwithf "%A is not a known Thoth primitive" primitiveType
     |> sprintf "Decode.%s"
 
   // https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/basic-types

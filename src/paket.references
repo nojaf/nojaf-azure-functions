@@ -5,3 +5,6 @@ Thoth.Json.Net
 FSharp.Core
 FSharp.Data
 File:JsonInference.fs
+File:Utils.fs
+File:TriviaTypes.fs
+File:TokenParser.fs

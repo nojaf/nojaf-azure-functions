@@ -5,6 +5,18 @@
     <AzureFunctionsVersion>V2</AzureFunctionsVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\paket-files\fsprojects\fantomas\src\Fantomas\TriviaTypes.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/TriviaTypes.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsprojects\fantomas\src\Fantomas\Utils.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/Utils.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsprojects\fantomas\src\Fantomas\TokenParser.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/TokenParser.fs</Link>
+    </Compile>
     <Compile Include="..\paket-files\fsharp\FSharp.Data\src\Json\JsonInference.fs">
       <Paket>True</Paket>
       <Link>paket-files/JsonInference.fs</Link>

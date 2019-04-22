@@ -5,8 +5,11 @@ nuget FSharp.Compiler.Service 28.0.0
 nuget FSharp.Core 4.6.2
 nuget Microsoft.NET.Sdk.Functions 1.0.26
 nuget Microsoft.NET.Test.Sdk 15.9.0
-nuget Thoth.Json.Net 3.0.0-beta-005 beta
+nuget Thoth.Json.Net 3.0.0
 nuget xunit 2.4.0
 nuget xunit.runner.visualstudio 2.4.0
 github fsharp/FSharp.Data /src/Json/JsonInference.fs
 nuget FSharp.Data 3.0.0
+github fsprojects/fantomas:trivia /src/Fantomas/TokenParser.fs
+github fsprojects/fantomas:trivia /src/Fantomas/TriviaTypes.fs
+github fsprojects/fantomas:trivia /src/Fantomas/Utils.fs
